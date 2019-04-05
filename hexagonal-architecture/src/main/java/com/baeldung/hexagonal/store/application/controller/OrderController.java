@@ -25,5 +25,4 @@ public class OrderController {
         Optional<Order> order = this.orderService.processNewCustomerOrder(customerId, requestDto.getProductQuantityMap());
         return new ResponseEntity<>(order.get(), HttpStatus.OK);
     }
-
 }
